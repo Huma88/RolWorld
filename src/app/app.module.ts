@@ -5,12 +5,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+//FIREBASE
+import { AngularFireModule } from "angularfire2";
+export const firebaseConfig = {
+  apiKey: "AIzaSyD0pcpak3_Yyl1RlUwdTD0LkIum12GFbLc",
+  authDomain: "rolworld-eabc2.firebaseapp.com",
+  databaseURL: "https://rolworld-eabc2.firebaseio.com",
+  projectId: "rolworld-eabc2",
+  storageBucket: "",
+  messagingSenderId: "342314693300"
+};
 
 @NgModule({
   declarations: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   imports: [
     BrowserModule,
@@ -18,13 +27,12 @@ import { HomePage } from '../pages/home/home';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HomePage
+    MyApp
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }

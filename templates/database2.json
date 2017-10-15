@@ -1,0 +1,259 @@
+{
+    //ESQUEMA 1
+    "itemTypeTemplate": {
+        "weapon": {
+            "melee": {
+                "dage": {
+                    "hands": 1
+                },
+                "sword": {
+                    "hands": 1
+                },
+                "greatsword": {
+                    "hands": 2
+                },
+                "spear": {
+                    "hands": 2
+                },
+                "mace": {
+                    "hands": 1
+                },
+                "axe": {
+                    "hands": 1
+                },
+                "battleaxe": {
+                    "hands": 2
+                },
+                "hammer": {
+                    "hands": 1
+                },
+                "warhammer": {
+                    "hands": 2
+                }
+            },
+            "range": {
+                "bow": {
+                    "hands": 2,
+                    "ammunation": [
+                        "arrow"
+                    ]
+                },
+                "crossbow": {
+                    "hands": 2,
+                    "ammunation": [
+                        "bolt"
+                    ]
+                }
+            },
+            "magic": {
+                "wand": {
+                    "hands": 1
+                },
+                "staff": {
+                    "hands": 2
+                }
+            },
+            "ammunation": {
+                "arrow": {},
+                "bolt": {}
+            }
+        },
+        "vestments": {
+            "clothing": {
+                "cloth": {
+                    "cover": [
+                        "torso",
+                        "legs"
+                    ],
+                    "layer": 0
+                },
+                "robe": {
+                    "cover": [],
+                    "layer": 2
+                },
+                "hood": {
+                    "cover": [
+                        "head"
+                    ],
+                    "layer": 0
+                },
+                "shoes": {
+                    "cover": [
+                        "feets"
+                    ],
+                    "layer": 0
+                },
+                "gloves": {
+                    "cover": [
+                        "hands"
+                    ],
+                    "layer": 1
+                },
+                "ring": {
+                    "cover": [
+                        "finger"
+                    ],
+                    "layer": 0
+                },
+                "amulets": {
+                    "cover": [
+                        "neck"
+                    ],
+                    "layer": 0
+                },
+                "circlets": {
+                    "cover": [
+                        "head"
+                    ],
+                    "layer": 0
+                }
+            }
+        },
+        "armor": {
+            "chest": {
+                "cover": [
+                    "torso",
+                    "legs"
+                ],
+                "layer": 1
+            },
+            "boots": {
+                "cover": [
+                    "feets"
+                ],
+                "layer": 0
+            },
+            "gauntlests": {
+                "cover": [
+                    "hands"
+                ],
+                "layer": 0
+            },
+            "helmet": {
+                "cover": [
+                    "head"
+                ],
+                "layer": 0
+            },
+            "shield": {
+                "hands": 1
+            }
+        },
+        "book": {
+            "skillBook": {
+                "skills": []
+            },
+            "spellBook": {
+                "spells": []
+            },
+            "questBook": {
+                "quests": []
+            }
+        },
+        "food": {
+            "raw": {
+                "meat": {
+                    "effects": []
+                },
+                "fish": {
+                    "effects": []
+                },
+                "vegetables": {
+                    "effects": []
+                },
+                "other": {
+                    "effects": []
+                }
+            },
+            "cooked": {
+                "ingredients": [],
+                "effects": []
+            },
+            "beverages": {
+                "effects": []
+            }
+        },
+        "ingredient": {
+            "organ": {
+                "creature": ""
+            },
+            "petals": {
+                "plant": ""
+            },
+            "insect": {},
+            "mushroom": {},
+            "other": {}
+        },
+        "other": {
+            "type7": "key",
+            "type8": "miscelaneous",
+            "type9": "note",
+            "type10": "ore or ingot",
+            "type11": "potions",
+            "type12": "quest item",
+            "type13": "soul gem",
+            "type15": "map"
+        }
+    },
+    "rarityTemplate": {
+        "common": true,
+        "rare": true,
+        "epic": true,
+        "legendary": true
+    },
+    "itemTemplate": {
+        "name": true,
+        "description": true,
+        "type": [
+            "",
+            ""
+        ],
+        "rarity": true,
+        "durability": true,
+        "stats": {
+            "modifier": {
+                "common": [
+                    -3,
+                    2
+                ],
+                "rare": [
+                    1,
+                    3
+                ],
+                "epic": [
+                    5,
+                    9
+                ],
+                "legendary": [
+                    10,
+                    15
+                ]
+            }
+        }
+    },
+    // "item1": {
+    //     "name": "Espada de madera",
+    //     "description": "Una espada de madera sin filo, usada por los niños para jugar",
+    //     "type1": "weapon",
+    //     "type2": null,
+    //     "legendary": false,
+    //     "unique": false,
+    //     "power": {}
+    // },
+    // "item2": {
+    //     "name": "Armadura de cuero",
+    //     "description": "Una simple armadura de cuero",
+    //     "type1": "armor",
+    //     "type2": "light",
+    //     "legendary": false,
+    //     "unique": false,
+    //     "power": {}
+    // },
+    // "item3": {
+    //     "name": "Collar de oro",
+    //     "type1": "accesory",
+    //     "type2": "necklace",
+    //     "legendary": false,
+    //     "unique": false,
+    // }
+}

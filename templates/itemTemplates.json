@@ -1,0 +1,219 @@
+{
+    "itemTemplate": {
+        "weapon": {
+            "melee": {
+                "dage": {
+                    "hands": 1
+                },
+                "sword": {
+                    "hands": 1
+                },
+                "greatsword": {
+                    "hands": 2
+                },
+                "spear": {
+                    "hands": 2
+                },
+                "mace": {
+                    "hands": 1
+                },
+                "axe": {
+                    "hands": 1
+                },
+                "battleaxe": {
+                    "hands": 2
+                },
+                "hammer": {
+                    "hands": 1
+                },
+                "warhammer": {
+                    "hands": 2
+                }
+            },
+            "range": {
+                "bow": {
+                    "hands": 2,
+                    "ammunation": [
+                        "arrow"
+                    ]
+                },
+                "crossbow": {
+                    "hands": 2,
+                    "ammunation": [
+                        "bolt"
+                    ]
+                }
+            },
+            "magic": {
+                "wand": {
+                    "hands": 1
+                },
+                "staff": {
+                    "hands": 2
+                }
+            },
+            "ammunation": {
+                "arrow": {},
+                "bolt": {}
+            }
+        },
+        "vestments": {
+            "clothing": {
+                "cloth": {
+                    "cover": [
+                        "torso",
+                        "legs"
+                    ],
+                    "layer": 0
+                },
+                "robe": {
+                    "cover": [],
+                    "layer": 2
+                },
+                "hood": {
+                    "cover": [
+                        "head"
+                    ],
+                    "layer": 0
+                },
+                "shoes": {
+                    "cover": [
+                        "feets"
+                    ],
+                    "layer": 0
+                },
+                "gloves": {
+                    "cover": [
+                        "hands"
+                    ],
+                    "layer": 1
+                },
+                "ring": {
+                    "cover": [
+                        "finger"
+                    ],
+                    "layer": 0
+                },
+                "amulets": {
+                    "cover": [
+                        "neck"
+                    ],
+                    "layer": 0
+                },
+                "circlets": {
+                    "cover": [
+                        "head"
+                    ],
+                    "layer": 0
+                }
+            }
+        },
+        "armor": {
+            "chest": {
+                "cover": [
+                    "torso",
+                    "legs"
+                ],
+                "layer": 1
+            },
+            "boots": {
+                "cover": [
+                    "feets"
+                ],
+                "layer": 0
+            },
+            "gauntlests": {
+                "cover": [
+                    "hands"
+                ],
+                "layer": 0
+            },
+            "helmet": {
+                "cover": [
+                    "head"
+                ],
+                "layer": 0
+            },
+            "shield": {
+                "hands": 1
+            }
+        },
+        "book": {
+            "skillBook": {
+                "skills": []
+            },
+            "spellBook": {
+                "spells": []
+            },
+            "questBook": {
+                "quests": []
+            }
+        },
+        "food": {
+            "raw": {
+                "meat": {
+                    "effects": []
+                },
+                "fish": {
+                    "effects": []
+                },
+                "vegetables": {
+                    "effects": []
+                },
+                "other": {
+                    "effects": []
+                }
+            },
+            "cooked": {
+                "ingredients": [],
+                "effects": []
+            },
+            "other": {
+                "effects": []
+            }
+        },
+        "ingredient": {
+            "creature": {},
+            "plant": {},
+            "insect": {},
+            "mushroom": {},
+            "other": {}
+        },
+        "key": {},
+        "miscellaneous": {
+            "tool": {
+                "lockpick": {
+                    "hands": 1,
+                    "uses": []
+                }
+            },
+            "ore": {},
+            "gem": {},
+            "questItems": {}
+        },
+        "note": {
+            "recipes": {
+                "text": "",
+                "object": ""
+            },
+            "map": {
+                "text": "",
+                "room": ""
+            }
+        },
+        "potions": {
+            "beverage": {
+                "effects": []
+            },
+            "healing": {
+                "effects": []
+            },
+            "poison": {
+                "effects": []
+            },
+            "utility": {
+                "effects": []
+            }
+        }
+    }
+}
