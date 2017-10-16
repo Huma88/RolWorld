@@ -1,63 +1,647 @@
 {
-    "rarityTemplate": {
-        "common": true,
-        "rare": true,
-        "epic": true,
-        "legendary": true
-    },
-    "itemTemplate": {
-        "name": true,
-        "description": true,
-        "type": [
-            "",
-            ""
-        ],
-        "rarity": true,
-        "durability": true,
-        "stats": {
-            "modifier": {
-                "common": [
-                    -3,
-                    2
-                ],
-                "rare": [
-                    1,
-                    3
-                ],
-                "epic": [
-                    5,
-                    9
-                ],
-                "legendary": [
-                    10,
-                    15
-                ]
-            }
+    "item": {
+        "itemKey1": {
+            "name": "Espada de madera",
+            "description": "texto",
+            "hands": 1,
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "equip"
+            ],
+            "quality": 12,
+            "itemType": "weapon",
+            "class": [
+                "sword"
+            ],
+            "type": [
+                "melee"
+            ]
+        },
+        "itemKey2": {
+            "name": "Baston de madera",
+            "description": "texto",
+            "hands": 2,
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "equip"
+            ],
+            "quality": 20,
+            "itemType": "weapon",
+            "class": [
+                "staff"
+            ],
+            "type": [
+                "melee",
+                "magic"
+            ]
+        },
+        "itemKey3": {
+            "name": "Camisa de lana",
+            "description": "texto",
+            "cover": [
+                "body"
+            ],
+            "layer": 0,
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "equip"
+            ],
+            "quality": 35,
+            "itemType": "cloth",
+            "class": [
+                "shirt"
+            ],
+            "type": [ //common, expensive, extravagant, exquisite
+                "common"
+            ]
+        },
+        "itemKey4": {
+            "name": "Tunica negra vieja",
+            "description": "texto",
+            "cover": [],
+            "layer": 2,
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "equip"
+            ],
+            "quality": 17,
+            "itemType": "cloth",
+            "class": [
+                "robe"
+            ],
+            "type": [ //common, expensive, extravagant, exquisite
+                "common"
+            ]
+        },
+        "itemKey5": {
+            "name": "Peto de cuero",
+            "description": "texto",
+            "cover": [
+                "body"
+            ],
+            "layer": 1,
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "equip"
+            ],
+            "quality": 22,
+            "itemType": "armor",
+            "class": [
+                "chest armor"
+            ],
+            "type": [
+                "light"
+            ]
+        },
+        "itemKey6": { //novice, apprentice, adept, expert 
+            "name": "Iniciacion a la magia",
+            "description": "texto",
+            "unique": false,
+            "itemType": "book",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "read"
+            ],
+            "class": [
+                "spellBook"
+            ],
+            "type": [
+                "novice"
+            ],
+            "spells": []
+        },
+        "itemKey7": { //novice, apprentice, adept, expert 
+            "name": "Cerrajeria para tontos",
+            "description": "texto",
+            "unique": false,
+            "itemType": "book",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "read"
+            ],
+            "class": [
+                "skillBook"
+            ],
+            "type": [
+                "novice"
+            ],
+            "skills": [
+                "sneak"
+            ]
+        },
+        "itemKey8": { //novice, apprentice, adept, expert 
+            "name": "El dragon guardian",
+            "description": "texto",
+            "unique": false,
+            "itemType": "book",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "read"
+            ],
+            "class": [
+                "questBook"
+            ],
+            "type": [
+                "expert"
+            ],
+            "quests": []
+        },
+        "itemKey9": {
+            "name": "Manzana",
+            "description": "texto",
+            "unique": false,
+            "itemType": "food",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "consume"
+            ],
+            "class": [
+                "vegetables"
+            ],
+            "type": [
+                "raw"
+            ],
+            "effects": [
+                {
+                    "stadisticOrAttribute": "healtpoints",
+                    "current": "+1",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": -1
+                }
+            ]
+        },
+        "itemKey10": {
+            "name": "Estofado de Carne",
+            "description": "texto",
+            "unique": false,
+            "itemType": "food",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "consume"
+            ],
+            "class": [ //simple o compound
+                "compound"
+            ],
+            "type": [
+                "cooked"
+            ],
+            "effects": [
+                {
+                    "stadisticOrAttribute": "healtpoints",
+                    "current": "+5",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": -1
+                },
+                {
+                    "stadisticOrAttribute": "healtpoints",
+                    "max": "+1",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": -1
+                },
+                {
+                    "stadisticOrAttribute": "stamine",
+                    "current": "+15",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": -1
+                }
+            ]
+        },
+        "itemKey11": {
+            "name": "Amanita Muscaria",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "consume"
+            ],
+            "itemType": "ingredient",
+            "class": [ //toxic, healing, aditive, neutral
+                "toxic"
+            ],
+            "type": [
+                "mushroom"
+            ],
+            "effects": [
+                {
+                    "stadisticOrAttribute": "healtpoints",
+                    "current": "-30",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": -1
+                },
+                {
+                    "stadisticOrAttribute": "healtpoints",
+                    "max": "/2",
+                    "perTurn": true,
+                    "delay": 0,
+                    "duration": 15 //turnos
+                }
+            ]
+        },
+        "itemKey12": {
+            "name": "Polvos del Anochecer",
+            "description": "texto",
+            "unique": false,
+            "itemType": "ingredient",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "consume"
+            ],
+            "class": [ //toxic, healing, aditive, neutral
+                "toxic"
+            ],
+            "type": [
+                "other"
+            ],
+            "effects": [
+                {
+                    "stadisticOrAttribute": "stamine",
+                    "current": "+70",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": 6
+                },
+                {
+                    "stadisticOrAttribute": "intelligence",
+                    "max": "/2",
+                    "current": "/2",
+                    "perTurn": true,
+                    "delay": 0,
+                    "duration": 21 //turnos
+                },
+                {
+                    "stadisticOrAttribute": "stamine",
+                    "max": "/2",
+                    "current": "/2",
+                    "perTurn": true,
+                    "delay": 7,
+                    "duration": 15 //turnos
+                }
+            ]
+        },
+        "itemKey13": {
+            "name": "Llave negra roida",
+            "description": "texto",
+            "unique": false,
+            "itemType": "key",
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "use"
+            ],
+            "class": [
+                "door"
+            ],
+            "type": [],
+            "openedItem": ""
+        },
+        "itemKey14": {
+            "name": "Jarron de ceramica",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop"
+            ],
+            "itemType": "miscelaneous",
+            "class": [
+                "formiture"
+            ],
+            "type": [
+                "other"
+            ]
+        },
+        "itemKey15": {
+            "name": "Mena de hierro",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop"
+            ],
+            "itemType": "miscelaneous",
+            "class": [ //ore or ingot
+                "ore"
+            ],
+            "type": [
+                "material"
+            ]
+        },
+        "itemKey16": {
+            "name": "Ruby",
+            "description": "texto",
+            "unique": false,
+            "itemType": "miscelaneous",
+            "action": [
+                "sell",
+                "give",
+                "drop"
+            ],
+            "class": [ //common, expensive, extravagant, exquisite
+                "exquisite"
+            ],
+            "type": [
+                "gem"
+            ],
+            "quality": 78
+        },
+        "itemKey17": {
+            "name": "Estatuilla de madera maciza",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "use",
+                "give",
+                "drop"
+            ],
+            "itemType": "miscelaneous",
+            "class": [ //hint or key //main or secundary
+                "hint",
+                "secundary"
+            ],
+            "type": [
+                "quest"
+            ],
+            "quest": ""
+        },
+        "itemKey18": {
+            "name": "Ganzua improvisada",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "use",
+                "give",
+                "drop"
+            ],
+            "itemType": "miscelaneous",
+            "class": [ //novice, apprentice, adept, expert
+                "novice"
+            ],
+            "type": [
+                "lockpick"
+            ],
+            "quality": 23
+        },
+        "itemKey19": {
+            "name": "Nota arrugada",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "read"
+            ],
+            "itemType": "note",
+            "class": [ //weapon, armor, clothes, potion, food,.....
+                "weapon"
+            ],
+            "type": [
+                "recipe"
+            ],
+            "items": []
+        },
+        "itemKey20": {
+            "name": "Pedazo de mapa ensangrentado",
+            "description": "texto",
+            "unique": true,
+            "action": [
+                "sell",
+                "give",
+                "drop",
+                "read"
+            ],
+            "itemType": "note",
+            "class": [ //exploration, treasure, trapLocation
+                "exploration"
+            ],
+            "type": [
+                "map"
+            ],
+            "locations": []
+        },
+        "itemKey21": {
+            "name": "Cerveza de cebro",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "use",
+                "give",
+                "consume"
+            ],
+            "itemType": "potion",
+            "class": [ //beer, wine,...
+                "beer"
+            ],
+            "type": [
+                "berverage"
+            ],
+            "effects": [
+                {
+                    "stadisticOrAttribute": "healtpoints",
+                    "current": "+6",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": -1
+                },
+                {
+                    "stadisticOrAttribute": "intelligence",
+                    "max": "-4",
+                    "perTurn": false,
+                    "delay": 0,
+                    "duration": 4 //turnos
+                }
+            ],
+            "quality": 64
+        },
+        "itemKey22": {
+            "name": "Cerveza de cebro",
+            "description": "texto",
+            "unique": false,
+            "action": [
+                "sell",
+                "use",
+                "give",
+                "consume"
+            ],
+            "itemType": "potion",
+            "class": [ //paralysis, confusion, damage,...
+                "paralysis"
+            ],
+            "type": [
+                "poison"
+            ],
+            "effects": [
+                {
+                    "stadisticOrAttribute": "stamine",
+                    "max": "-999999",
+                    "perTurn": true,
+                    "delay": 5,
+                    "duration": 3
+                }
+            ],
+            "quality": 64
         }
     },
-    // "item1": {
-    //     "name": "Espada de madera",
-    //     "description": "Una espada de madera sin filo, usada por los niños para jugar",
-    //     "type1": "weapon",
-    //     "type2": null,
-    //     "legendary": false,
-    //     "unique": false,
-    //     "power": {}
-    // },
-    // "item2": {
-    //     "name": "Armadura de cuero",
-    //     "description": "Una simple armadura de cuero",
-    //     "type1": "armor",
-    //     "type2": "light",
-    //     "legendary": false,
-    //     "unique": false,
-    //     "power": {}
-    // },
-    // "item3": {
-    //     "name": "Collar de oro",
-    //     "type1": "accesory",
-    //     "type2": "necklace",
-    //     "legendary": false,
-    //     "unique": false,
-    // }
+    "character": {
+        "characterKey1": {
+            "name": "nombre",
+            "age": 0,
+            "sex": "",
+            "race": "raceKey1",
+            "especialization": "especializationKey1",
+            "appearance": {
+                "head": {
+                    "eyes": {
+                        "color": "marron",
+                        "size": "normal"
+                    },
+                    "noise": {
+                        "form": "normal",
+                        "size": "normal"
+                    },
+                    "ears": {
+                        "position": "normal",
+                        "size": "normal",
+                        "form": "normal"
+                    },
+                    "hair": {
+                        "length": "normal",
+                        "color": "marron",
+                        "form": "normal"
+                    },
+                    "forehead": {
+                        "size": "normal"
+                    },
+                    "facial hair": {
+                        "color": "normal",
+                        "amount": "normal",
+                        "length": "normal"
+                    }
+                },
+                "body": {
+                    "corpulency": "normal",
+                    "arms": "normal",
+                    "hands": "normal",
+                    "torso": "normal",
+                    "back": "normal",
+                    "legs": "normal",
+                    "feets": "normal",
+                    "ass": "normal",
+                    "bodyHair": {
+                        "color": "normal",
+                        "amount": "normal",
+                        "length": "normal"
+                    }
+                }
+            },
+            "stadistics": {
+                "healtpoints": 0,
+                "mana": 0,
+                "stamine": 0
+            },
+            "atributes": {
+                "streng": 0,
+                "intelligence": 0,
+                "agility": 0,
+                "skill": 0,
+                "vitality": 0,
+                "appearance": 0
+            },
+            "skills": {
+                "combat": {
+                    "heavyArmor": 0,
+                    "mediumArmor": 0,
+                    "spear": 0,
+                    "armorer": 0,
+                    "axe": 0,
+                    "bluntWeapon": 0,
+                    "longBlade": 0,
+                    "block": 0,
+                    "athletics": 0
+                },
+                "stealth": {
+                    "acrobatics": 0,
+                    "lightArmor": 0,
+                    "marksman": 0,
+                    "sneak": 0,
+                    "handToHand": 0,
+                    "shortBlade": 0,
+                    "mercantile": 0,
+                    "speech": 0
+                },
+                "magic": {
+                    "alteration": 0,
+                    "conjuration": 0,
+                    "destruction": 0,
+                    "enchanting": 0,
+                    "illusion": 0,
+                    "restoration": 0,
+                    "alchemy": 0,
+                    "mysticism": 0,
+                    "unarmored": 0
+                }
+            },
+            "recipes": [],
+            "inventory": {
+                "randomKey1": {
+                    "item": "itemKey1",
+                    "powers": [],
+                    "durability": 45,
+                    "equiped": true
+                },
+                "randomKey2": {
+                    "item": "itemKey3",
+                    "powers": [],
+                    "durability": 89,
+                    "equiped": true
+                },
+                "randomKey3": {
+                    "item": "itemKey4",
+                    "powers": [],
+                    "durability": 21,
+                    "equiped": true
+                }
+            },
+            "location": ""
+        }
+    }
 }
